@@ -1,5 +1,3 @@
----
-
 ### 📄 Project Specification: The Real-Time Auction Engine
 
 **Overview**
@@ -37,7 +35,3 @@ A high-performance, concurrent REST API built to handle live auction bidding. Th
 * **High-Frequency Read Caching:** The current highest bid is cached in Redis to prevent database crashes during bidding wars.
 * **Immutable Audit Logs:** An append-only `BidHistory` table strictly records every bid attempt, ensuring financial traceability.
 * **Automated Closing:** Background workers monitor `end_time` deadlines to automatically lock auctions and notify winners.
-
-
-
----
